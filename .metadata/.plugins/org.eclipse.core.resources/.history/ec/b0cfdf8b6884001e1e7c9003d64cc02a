@@ -1,0 +1,10 @@
+package Assg4;
+
+public class arrays_print_L_square_matrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

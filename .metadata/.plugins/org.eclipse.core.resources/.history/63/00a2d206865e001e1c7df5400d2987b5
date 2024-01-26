@@ -1,0 +1,15 @@
+Sizes of different primitive data types in JAVA:
+	-				1byte	-->	8bits
+	-1short		-->	2bytes	-->	16bits
+	-1int		-->	4bytes	-->	32bits
+	-1long		-->	8bytes	-->	64bits
+	
+
+	-1float		-->	4bytes	-->	32bits
+	-1double	-->	8bytes	-->	64bits
+	
+	
+	-1boolean	-->	------	-->	1bit
+
+	
+	-1char		-->	2byte	-->	16bits

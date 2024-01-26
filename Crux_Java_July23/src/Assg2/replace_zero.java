@@ -1,0 +1,49 @@
+//This code doesn't satisfy the 0 input
+
+
+package Assg2;
+import java.util.*;
+public class replace_zero {
+	public static int length(int n) {
+		int count=0;
+		while(n>0) {
+			count++;
+			n/=10;
+		}
+		return count;
+	}
+	
+	public static int[] separate_number(int n, int len) {
+		int[] arr = new int[len];
+		for(int i=0; i<len; i++) {
+			arr[i]=n%10;
+			n/=10;
+		}
+		return arr;
+	}
+	
+	public static int[] replace(int[] arr, int n) {
+		for(int i=0; i<length(n); i++) {
+			if(arr[i]==0) {
+				arr[i]=5;
+			}
+		}
+		return arr;
+	}
+	
+	public static int arr_to_number(int[] arr, int n) {
+		int num=0;
+		for(int i=length(n)-1; i>-1; i--) {
+			num=num*10+arr[i];
+		}
+		return num;				
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		System.out.println(arr_to_number(replace(separate_number(n, length(n)), n), n));
+	}
+
+}

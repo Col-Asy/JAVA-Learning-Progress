@@ -1,0 +1,23 @@
+package Assg5;
+
+public class can_you_read_this_CamelCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "IAmACompetitiveProgrammer";
+        for (char c : s.toCharArray()) {
+        	boolean condt=false;
+        	if (Character.isUpperCase(c)) {
+                if(condt==true) {
+                	System.out.println();
+                }
+                else {
+                	condt=true;
+                }
+            }
+        	
+        	System.out.print(c);
+        }
+	}
+
+}

@@ -1,0 +1,24 @@
+package Assg3;
+
+public class array_reverse_array {
+	public static long[] reverse_arr(long[] arr) {
+		int start=0, end=arr.length-1;
+		while(start<end) {
+			long temp = arr[start];
+			arr[start]=arr[end];
+			arr[end]=temp;
+		
+			start++;
+			end--;
+		}
+		
+		return arr;
+	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long[] arr = {0,4,6,8,9};
+		System.out.println(reverse_arr(array_reverse_array.toString(arr)));
+	}
+
+}

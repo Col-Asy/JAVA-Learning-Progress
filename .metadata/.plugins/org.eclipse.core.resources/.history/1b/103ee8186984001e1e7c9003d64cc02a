@@ -1,0 +1,25 @@
+package Assg4;
+
+import java.util.Scanner;
+
+public class arrays_spiral_print_anticlockwise {
+	public static void Display(int[][] arr) {
+		for(int i=0; i<arr.length; i++) {
+			
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();// row
+		int m = input.nextInt();// col
+		int[][] arr = new int[n][m];
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[0].length; j++) {
+				arr[i][j] = input.nextInt();
+			}
+		}
+		Display(arr);
+	}
+
+}

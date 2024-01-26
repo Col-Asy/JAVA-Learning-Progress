@@ -1,0 +1,25 @@
+package Assg2;
+
+public class count_digit {
+	public static int length(int n) {
+		int count=0;
+		while(n>0) {
+			count++;
+			n/=10;
+		}
+		return count;
+	}
+	
+	public static int[] separate_number(int n, int count) {
+		int[] arr = new int[count];
+		for(int i=0; i<count; i++) {
+			arr[i]=(int)(n%(Math.pow(10, i+1)));
+		}
+		return arr;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
