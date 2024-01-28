@@ -1,0 +1,31 @@
+package Assg5;
+import java.util.*;
+public class Strings_String_Compression {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="aaabbccds";
+		
+		basicCompression(str);
+	}
+	
+	public static void basicCompression(String str) {
+		int startPt=0, endPt=0, count=0;
+		
+		while(endPt<str.length()-1) {
+			
+			while(str.charAt(startPt)==str.charAt(endPt)) {
+				count++;
+				endPt++;
+				System.out.println(endPt);
+			}
+			
+			System.out.print(str.charAt(startPt)+count);
+			endPt++;
+			startPt=endPt;
+			endPt-=2;
+			count=0;
+		}
+	}
+
+}

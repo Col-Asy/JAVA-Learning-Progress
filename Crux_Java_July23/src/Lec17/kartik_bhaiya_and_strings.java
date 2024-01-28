@@ -1,11 +1,14 @@
 package Lec17;
-
+import java.util.*;
 public class kartik_bhaiya_and_strings {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "aabababbabaaaaaaabbaa";
-		int k = 3;
+		Scanner input = new Scanner(System.in);
+		int k = input.nextInt();
+		String str = input.next();
+//		String str = "aabababbabaaaaaaabbaa";
+//		int k = 3;
 		int flipa = maxlen(str, k, 'a');
 		int flipb = maxlen(str, k, 'b');
 		System.out.println(Math.max(flipa, flipb));

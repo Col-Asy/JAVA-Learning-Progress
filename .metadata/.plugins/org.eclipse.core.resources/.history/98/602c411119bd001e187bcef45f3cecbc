@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class test {
+	public static void main(String args[]) {
+		String str = "81615";
+		boolean[] used = new boolean[str.length()];
+		System.out.println(used.length);
+		for (int len = 0; len < str.length(); len++) {
+			for (int i = len; i < str.length(); i++) {
+				int gap = i - len;
+				String s = str.substring(gap, i);
+				System.out.println(s);
+			}
+		}
+	
+		
+	}
+}

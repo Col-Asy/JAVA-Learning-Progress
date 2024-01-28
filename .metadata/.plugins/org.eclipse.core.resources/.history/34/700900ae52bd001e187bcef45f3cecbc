@@ -1,0 +1,23 @@
+package Assg5;
+
+public class Non_Repeating_Character {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="abbc";
+		
+		System.out.println(nonRepeatChar(str));
+	}
+	
+	public static char nonRepeatChar(String str) {
+		String ch="";
+		for(int i=0; i<str.length(); i++) {
+			for(int j=i+1; j<str.length(); j++) {
+				if(str.charAt(i)==str.charAt(j)) break;
+			}
+			
+			System.out.println(str.charAt(i));
+			break;
+		}
+	}
+}

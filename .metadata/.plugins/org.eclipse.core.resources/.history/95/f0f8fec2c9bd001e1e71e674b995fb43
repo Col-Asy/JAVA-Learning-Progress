@@ -1,0 +1,24 @@
+package Assg5;
+
+import java.util.Arrays;
+
+public class Form_Biggest_Number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {54, 546, 548, 60};
+		
+		System.out.println(biggestNum(arr));
+	}
+	
+	public static int biggestNum(int[] arr) {
+		Arrays.sort(arr);
+		String strNew = "";
+		for(int i=0; i<arr.length; i++) {
+			strNew+= Integer.toString(arr[i]);
+		}
+		
+		return strNew;
+	}
+
+}
