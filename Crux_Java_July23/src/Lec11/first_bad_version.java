@@ -4,7 +4,8 @@ public class first_bad_version {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int[] arr = {1,2,3,4,5,6};
+		int n = 4;
 	}
 
 	public static int firstBadVersion(int n) {
@@ -26,7 +27,8 @@ public class first_bad_version {
 
 	public static boolean isBadVersion(int mid) {
 		// TODO Auto-generated method stub
-		return false;
+		if(mid!=4)	return false;
+		else return true;
 	}
 
 }
