@@ -1,20 +1,17 @@
-import java.util.*;
+import java.util.Arrays;
 
 public class test {
-	public static void main(String args[]) {
-//		Scanner sc=new Scanner(System.in);
-//		String str = sc.next();
-//		
-//		System.out.println(str);
-		
-		String ques = "abc";
-		String s1 = ques.substring(0, 0);
-		String s2 = ques.substring(1);
-		
-		System.out.println(s1 + " " + s2);
-		
-//		System.out.println((int)Math.log10(12341235));
-		
+	public static void main(String[] args) {
+		String[] words1 = {"amazon","apple","facebook","google","leetcode"}, words2 = {"e","o"};
+		System.out.println();
+		wordSubsets(words1, words2);
 	}
-	
+
+	public static void wordSubsets(String[] words1, String[] words2) {
+		for(String letter : words2) {
+			for(String words : words1) {
+				if(words.contains(letter)) System.out.println(words);
+			}
+		}
+    }
 }

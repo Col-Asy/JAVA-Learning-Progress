@@ -1,5 +1,7 @@
 package Lec26;
 
+// Code to check palindromic substring using axis and orbit strategy
+
 public class Axis_Orbit {
 
 	public static void main(String[] args) {
